@@ -1,3 +1,4 @@
+"use client"
 import { useState, useEffect } from 'react';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 
@@ -10,7 +11,6 @@ export default function Home() {
     const genAI = new GoogleGenerativeAI(process.env.APi);
     window.genAI = genAI;
   }, []);
-  console.log(process.env.API)
   const sendMessage = async () => {
     if (!input.trim()) return;
 

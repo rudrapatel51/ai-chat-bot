@@ -15,8 +15,7 @@ export default function Home() {
   const recognitionRef = useRef(null);
 
   useEffect(() => {
-    const apiKey = 'AIzaSyAi119cnRG3Ilpj-gJlirUIM2XrGGgkI3g';
-    const ai = new GoogleGenerativeAI(apiKey);
+    const ai = new GoogleGenerativeAI("AIzaSyAi119cnRG3Ilpj-gJlirUIM2XrGGgkI3g");
     setGenAI(ai);
 
     if ('webkitSpeechRecognition' in window) {
