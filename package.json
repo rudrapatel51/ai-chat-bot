@@ -10,10 +10,11 @@
   },
   "dependencies": {
     "@google/generative-ai": "^0.17.1",
-    "@next/env": "^14.2.8",
+    "@next/env": "^14.2.22",
     "next": "14.2.8",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-webcam": "^7.2.0"
   },
   "devDependencies": {
     "eslint": "^8",

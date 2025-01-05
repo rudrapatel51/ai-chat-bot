@@ -7,11 +7,10 @@ export default function Home() {
   const [isTyping, setIsTyping] = useState(false);
 
   useEffect(() => {
-    // Initialize the Gemini API
-    const genAI = new GoogleGenerativeAI("AIzaSyAi119cnRG3Ilpj-gJlirUIM2XrGGgkI3g");
+    const genAI = new GoogleGenerativeAI(process.env.APi);
     window.genAI = genAI;
   }, []);
-
+  console.log(process.env.API)
   const sendMessage = async () => {
     if (!input.trim()) return;
 
