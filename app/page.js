@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { GoogleGenerativeAI } from '@google/generative-ai';
+import ReactMarkdown from "react-markdown"
 import Webcam from 'react-webcam';
 
 export default function Home() {
@@ -154,7 +155,9 @@ export default function Home() {
               <span className={`inline-block p-2 rounded-lg ${
                 message.role === 'user' ? 'bg-blue-500 text-white' : 'bg-white dark:bg-gray-700'
               }`}>
+               <ReactMarkdown>
                 {message.content}
+                </ReactMarkdown> 
               </span>
             </div>
           ))}
